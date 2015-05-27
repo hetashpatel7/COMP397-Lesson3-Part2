@@ -9,18 +9,43 @@
 </head>
 <body onload="init()">
     <div id="impress">
+        <!--First slide-->
         <div id="1" class="step slide">
             <div class="slide-text">
                 <p>There is a time machine over there,flip the switch?</p>
-                <p><a  href="#2">Flip</a>it.</p>
+                <p><a href="#2">Flip</a>it.</p>
                 <p><a href="#3">Wait</a>for your dad,who is a scientist.</p>
+            </div><!--End of slide text-->
+        </div><!--End of slide 1  -->
+        <!--Second slide-->
+        <div id="2" class="step slide" data-x="1500"><!--we can write data-z or data-x .move to another slide in different way-->
+            <div class="slide-text">
+                <p>
+                    You went back in time.It was fun.
+                </p>
+                <div class="menu"><a href="#1">Start Over</a></div>
+
             </div>
-        </div>
-    </div>
+        </div><!--End of slide2-->
+
+
+        <div id="3" class="step slide" data-x="-1500">
+            <div class="slide-text">
+                <p>
+                    You waited for your dad.
+                </p>
+                <p>He wanted you to do your homework</p>
+                <p>It was very boring...</p>
+                <div class="menu"><a href="#1">Start Over</a></div>
+
+            </div>
+        </div><!--End of slide3-->
+
+    </div><!--End of impress-->
     <script src="scripts/lib/impress.js"></script>
     <script src="scripts/game.js"></script>
 
-   
+
 </body>
 </html>
  
